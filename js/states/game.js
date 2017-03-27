@@ -158,7 +158,6 @@ Game.prototype.onKeyPressed = function() {
 
 Game.prototype.onClick = function() {
     if(this.dialogs){
-        console.log("DIALOGS");
         this.dialogNo++;
         if(this.dialogNo >= dialogs.length){
             this.dialogs=false;
@@ -167,7 +166,6 @@ Game.prototype.onClick = function() {
         }
     }
     else if( this.firstIndices ){
-        console.log("FIRST INDICES");
         this.firstIndicesCounter++;
         if(this.firstIndicesCounter <= 2){
             this.displayIndice();
@@ -180,20 +178,17 @@ Game.prototype.onClick = function() {
         }
     }
     else if( this.indice ){
-        console.log("INDICE");
         this.indice = false;
         this.switchQuestion( this. success );
         
     }
     else if( this.vision ){
-        console.log("VISION");
         this.vision = false;
         this.indice = true;
         this.displayIndice();
         this.success = true;
     }
     else if( this.skit ){
-        console.log("SKIT");
         this.skit = false;
         if( this.success){
             this.indice = true;
@@ -206,7 +201,6 @@ Game.prototype.onClick = function() {
     }
 
     else if (!this.dialogs){
-            console.log("QUESTION");
             if(clickOnButtonPass()){
                 this.pass();
             }
@@ -214,7 +208,6 @@ Game.prototype.onClick = function() {
                 this.chose(0);
             }
             else if(clickOnButtonVision()){
-                console.log("BUTTON CLICKED");
                 this.getVision();
             }
             else if(clickOnPerso1()){
@@ -249,105 +242,77 @@ Game.prototype.generatePersos = function(){
     //PET
     var randomPet =  Math.ceil(Math.random() * pets.length-1);
     this.perso1.pet = pets[randomPet];
-    console.log(this.perso1.name +" : "+this.perso1.pet.full);
     pets.splice(randomPet, 1);
 
     var randomPet =  Math.ceil(Math.random() * pets.length-1);
     this.perso2.pet = pets[randomPet];
-    console.log(this.perso2.name +" : "+this.perso2.pet.full);
     pets.splice(randomPet, 1);
 
     var randomPet =  Math.ceil(Math.random() * pets.length-1);
     this.perso3.pet = pets[randomPet];
-    console.log(this.perso3.name +" : "+this.perso3.pet.full);
     pets.splice(randomPet, 1);
 
     this.perso4.pet = pets[0];
-    console.log(this.perso4.name +" : "+this.perso4.pet.full);
-
-    console.log("------");
 
     //LOVE
     var randomLove = Math.ceil(Math.random() * loves.length-1);
     this.perso1.love = loves[randomLove];
-    console.log(this.perso1.name +" : "+this.perso1.love.full);
     loves.splice(randomLove, 1);
 
     var randomLove = Math.ceil(Math.random() * loves.length-1);
     this.perso2.love = loves[randomLove];
     loves.splice(randomLove, 1);
-    console.log(this.perso2.name +" : "+this.perso2.love.full);
 
     var randomLove = Math.ceil(Math.random() * loves.length-1);
     this.perso3.love = loves[randomLove];
     loves.splice(randomLove, 1);
-    console.log(this.perso3.name +" : "+this.perso3.love.full);
 
     this.perso4.love = loves[0];
-    console.log(this.perso4.name +" : "+this.perso4.love.full);
-
-    console.log("------");
 
     //SHAME
     var randomShame = Math.ceil(Math.random() * shames.length-1);
     this.perso1.shame = shames[randomShame];
-    console.log(this.perso1.name +" : "+this.perso1.shame.full);
     shames.splice(randomShame, 1);
 
     var randomShame = Math.ceil(Math.random() * shames.length-1);
     this.perso2.shame = shames[randomShame];
-    console.log(this.perso2.name +" : "+this.perso2.shame.full);
     shames.splice(randomShame, 1);
 
     var randomShame = Math.ceil(Math.random() * shames.length-1);
     this.perso3.shame = shames[randomShame];
-    console.log(this.perso3.name +" : "+this.perso3.shame.full);
     shames.splice(randomShame, 1);
 
     this.perso4.shame = shames[0];
-    console.log(this.perso4.name +" : "+this.perso4.shame.full);
 
-    console.log("------");
-    
     //FOOD
     var randomFood = Math.ceil(Math.random() * foods.length-1);
     this.perso1.food = foods[randomFood];
-    console.log(this.perso1.name +" : "+this.perso1.food.full);
     foods.splice(randomFood, 1);
 
     var randomFood = Math.ceil(Math.random() * foods.length-1);
     this.perso2.food = foods[randomFood];
-    console.log(this.perso2.name +" : "+this.perso2.food.full);
     foods.splice(randomFood, 1);
 
     var randomFood = Math.ceil(Math.random() * foods.length-1);
     this.perso3.food = foods[randomFood];
-    console.log(this.perso3.name +" : "+this.perso3.food.full);
     foods.splice(randomFood, 1);
 
     this.perso4.food = foods[0];
-    console.log(this.perso4.name +" : "+this.perso4.food.full);
-
-    console.log("------");
-
+    
     //FAMILY
     var randomFamily = Math.ceil(Math.random() * families.length-1);
     this.perso1.family = families[randomFamily];
-    console.log(this.perso1.name +" : "+this.perso1.family.full);
     families.splice(randomFamily, 1);
     
     var randomFamily = Math.ceil(Math.random() * families.length-1);
     this.perso2.family = families[randomFamily];
-    console.log(this.perso2.name +" : "+this.perso2.family.full);
     families.splice(randomFamily, 1);
 
     var randomFamily = Math.ceil(Math.random() * families.length-1);
     this.perso3.family = families[randomFamily];
-    console.log(this.perso3.name +" : "+this.perso3.family.full);
     families.splice(randomFamily, 1);
 
     this.perso4.family = families[0];
-    console.log(this.perso4.name +" : "+this.perso4.family.full);
     
     //TO DELETE
     this.perso1.love = {"full":"jeanf", "short":"jean"};
@@ -501,7 +466,6 @@ Game.prototype.chose = function(persoNo){
 }
 
 Game.prototype.checkAnswer = function(perso){
-    console.log(perso.pet);
     var question = questions[ this.questionNo ];
     switch (question.type){
         case "shame" : 
@@ -580,7 +544,6 @@ Game.prototype.checkNoone = function(){
 };
 
 Game.prototype.getVision = function(){
-    console.log("HEY");
     this.visionsCounter--;
     if(this.visionsCounter<0){
         this.visionsCounter=0;

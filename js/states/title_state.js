@@ -13,7 +13,6 @@ TitleState.prototype.update = function() {
     this.uk.render(510, 462);
 
     if(clickHappened){
-        console.log("lol");
         if(clickOnFR()){
             french = true;
             changeToFrench();

@@ -6,7 +6,6 @@ canvas.addEventListener('click', function(event) {
     clickHappened = true;
     clickX = event.clientX - rect.left;
     clickY = event.clientY - rect.top;
-    console.log(clickX +" - "+clickY );
  }, false);
 
 var clickHappened = false;

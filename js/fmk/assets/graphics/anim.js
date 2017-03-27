@@ -26,7 +26,6 @@ Anim.prototype.play = function(canvasX, canvasY) {
 
 Anim.prototype.playOnce = function(canvasX, canvasY) {
     if (!this.isOver) {
-        console.log("played once");
         this.duration++;
         var currentFrame = this.frames[this.currentFrameIdx];
 
