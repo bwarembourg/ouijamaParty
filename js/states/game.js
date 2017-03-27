@@ -188,7 +188,9 @@ Game.prototype.onClick = function() {
     else if( this.vision ){
         console.log("VISION");
         this.vision = false;
-        this.switchQuestion( true );
+        this.indice = true;
+        this.displayIndice();
+        this.success = true;
     }
     else if( this.skit ){
         console.log("SKIT");
