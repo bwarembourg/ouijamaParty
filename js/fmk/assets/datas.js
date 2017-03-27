@@ -114,12 +114,13 @@
  dialogs = [
 
     {
-        "text": "It’s Halloween’s Eve and Kim’, Chelsea, Rob’ and Latisha decide to spend the night together , telling scary stories, but…",
+        "text": "It’s Halloween’s Eve and Kim’, Chelsea, Rob’ and Latisha decide to ...",
         "perso": 0
     },
-
-
     {
+        "text": "spend the night together , telling scary stories, but…",
+        "perso": 0
+    },{
         "text": " Look at this guys ! I found my brother’s Ouija Board ! Let’s try it !",
         "perso": 1
     },
