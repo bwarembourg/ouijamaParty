@@ -20,7 +20,7 @@ function Game() {
     this.questionNo = 0;
     this.dialogNo = 0;
     this.persoSpeaking =0;
-    this.visionsCounter = 2;
+    this.visionsCounter = 3;
 
     this.questionAsked = false;
 
@@ -456,7 +456,7 @@ Game.prototype.chose = function(persoNo){
             textValue = success;
         }
         else{
-            this.life.calculate(-3);
+            this.life.calculate(-2);
             textValue = defeat;
         }
     }
