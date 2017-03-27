@@ -104,6 +104,7 @@ Game.prototype.update = function() {
             console.log("wesh");
         }
         this.buttonNooneText.x -=12;
+        //this.fillFiles();
     }
 
     this.life.toDisplay = true;
@@ -316,9 +317,6 @@ Game.prototype.generatePersos = function(){
 
     this.perso4.family = families[0];
     
-    //TO DELETE
-    this.perso1.love = {"full":"jeanf", "short":"jean"};
-    pets.push({"full":"duckf", "short":"duck"});
 }
 
 Game.prototype.displayDialog = function(){
@@ -617,4 +615,26 @@ Game.prototype.checkFilledFiles = function(){
     
        
     
+}
+
+Game.prototype.fillFiles = function(){
+    this.textPerso.pet = this.perso1.pet.short;
+    this.textPerso.shame = this.perso1.shame.short;
+    this.textPerso.love = this.perso1.love.short;
+    this.textPerso.food = this.perso1.food.short;
+
+    this.textPerso2.pet = this.perso2.pet.short;
+    this.textPerso2.shame = this.perso2.shame.short;
+    this.textPerso2.love = this.perso2.love.short;
+    this.textPerso2.food = this.perso2.food.short;
+
+    this.textPerso3.pet = this.perso3.pet.short;
+    this.textPerso3.shame = this.perso3.shame.short;
+    this.textPerso3.love = this.perso3.love.short;
+    this.textPerso3.food = this.perso3.food.short;
+
+    this.textPerso4.pet = this.perso4.pet.short;
+    this.textPerso4.shame = this.perso4.shame.short;
+    this.textPerso4.love = this.perso4.love.short;
+    this.textPerso4.food = this.perso4.food.short;
 }

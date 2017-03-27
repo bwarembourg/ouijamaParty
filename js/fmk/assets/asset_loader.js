@@ -31,6 +31,7 @@ AssetLoader.prototype.load = function() {
     
     this._loadImage("button", "resources/img/button.png", BUTTON_WIDTH, BUTTON_HEIGHT);
     this._loadImage("gameover", "resources/img/gameover.jpg", 512, 480);
+    this._loadImage("win", "resources/img/win.jpg", 512, 480);
 
     
 };

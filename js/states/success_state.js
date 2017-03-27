@@ -1,5 +1,5 @@
 function SuccessState() {
-    this.background = ASSET_MANAGER.getCrop("gameover");
+    this.background = ASSET_MANAGER.getCrop("win");
     RENDERER.life.toDisplay = false;
 };
 
@@ -13,5 +13,4 @@ SuccessState.prototype.reset = function() {
 };
 
 SuccessState.prototype.onKeyPressed = function() {
-    STATE_MANAGER.switchToState("game");
 }

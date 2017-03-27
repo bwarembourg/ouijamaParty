@@ -43,8 +43,8 @@
 ];
  shames = [
     {
-        "full":"Canada",
-        "short":"Canada"
+        "full":"Canadian",
+        "short":"Canadian"
     },
     {
         "full":"Glee",

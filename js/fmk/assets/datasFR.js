@@ -8,7 +8,7 @@ var changeToFrench = function()
         "short":"3 Pattes"
     },{
         "full":"Une Tarentule",
-        "short":"Tarentula"
+        "short":"Tarentule"
     },{
         "full":"Un animal appelé Hannibal",
         "short":"Hannibal"
@@ -47,7 +47,7 @@ var changeToFrench = function()
  shames = [
     {
         "full":"Canada",
-        "short":"Canada"
+        "short":"Canadien"
     },
     {
         "full":"Glee",
@@ -108,7 +108,7 @@ var changeToFrench = function()
         "short":"Lactose"
     },{
         "full":"Beaucoup trop de vin",
-        "short":"Wine"
+        "short":"Vin"
     },{
         "full":"Une voiture de Fucc Boi",
         "short":"Prius"
@@ -224,7 +224,7 @@ var changeToFrench = function()
         "type":"love"
     }, {
         "text":"Qui est secrètement amoureux/se de Mme Waters, la prof’ d’Anglais ?",
-        "short":"Mme Waters",
+        "short":"Ms Waters",
         "type":"love"
     },
     //food
