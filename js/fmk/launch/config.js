@@ -62,4 +62,4 @@ french = false;
 
 DEBUG_ENABLED = false;
 
-APP_TOTAL_ASSETS_NB = 5;
+APP_TOTAL_ASSETS_NB = 30;
