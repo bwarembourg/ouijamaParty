@@ -14,14 +14,15 @@ Renderer.prototype.render = function() {
             var crop = renderable.crop;
             var spritesheet = ASSET_MANAGER.getSpritesheet(crop.spritesheetName);
 
-            console.log( this.renderables );
-            CTX.drawImage(
-                spritesheet, 
-                crop.sourceX, crop.sourceY, 
-                crop.sourceWidth, crop.sourceHeight, 
-                renderable.canvasX, renderable.canvasY, 
-                crop.sourceWidth, crop.sourceHeight
-            );
+            if(spritesheet){
+                CTX.drawImage(
+                    spritesheet, 
+                    crop.sourceX, crop.sourceY, 
+                    crop.sourceWidth, crop.sourceHeight, 
+                    renderable.canvasX, renderable.canvasY, 
+                    crop.sourceWidth, crop.sourceHeight
+                );
+            }
 
             for(var j = 0; j < this.texts.length; j++){
 
