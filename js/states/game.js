@@ -100,6 +100,8 @@ Game.prototype.update = function() {
         if(french){
             this.buttonPassText.value = "PASSER";
             this.buttonNooneText.value = "PERSONNE";
+            this.text.helper = basicHelper;
+            console.log("wesh");
         }
         this.buttonNooneText.x -=12;
     }
