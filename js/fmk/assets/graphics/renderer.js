@@ -14,6 +14,7 @@ Renderer.prototype.render = function() {
             var crop = renderable.crop;
             var spritesheet = ASSET_MANAGER.getSpritesheet(crop.spritesheetName);
 
+            console.log( this.renderables );
             CTX.drawImage(
                 spritesheet, 
                 crop.sourceX, crop.sourceY, 
